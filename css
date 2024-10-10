@@ -1,0 +1,54 @@
+body {
+    padding: 20px;
+    background-color: white;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black; /* 修正边框属性 */
+}
+
+#dino {
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+    animation: jump 0.3s infinite; /* 保持动画名称一致 */
+}
+
+.jumpClass {
+    animation: jump 0.3s infinite; /* 保持动画名称一致 */
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0px;
+    }
+    30% {
+        bottom: 100px;
+    }
+    70% {
+        bottom: 100px;
+    }
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    left: 450px;
+    animation: block 1s linear infinite; /* 修正动画名称 */
+}
+
+@keyframes block {
+    0% {
+        left: 450px;
+    }
+    100% {
+        left: -20px;
+    }
+}
